@@ -14,7 +14,6 @@ export const Tasks = ({ getTasks, newTask, tasks }) => {
         {tasks.map((task, index) => (
           <li key={index}>
             <div>
-              <input type='checkbox' />
               <p>{task.task}</p>
             </div>
             <button onClick={() => handleOnClick(task.id)}>❌</button>
